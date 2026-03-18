@@ -1,19 +1,29 @@
-# Code for Table S5 and Table S7 in “Stratum order-of-addition designs”
+# Stratum Order-of-Addition Designs
 
-This repository contains the R scripts used to reproduce the results reported in **Table S5** and **Table S7** of the supplementary material for the article:
+This repository contains the necessary documentation required to replicate all results in:
 
 **Stratum order-of-addition designs**  
-Liushan Zhou, Ze Liu, Min-Qian Liu, and Guanzhou Chen
+by Liushan Zhou, Ze Liu, Min-Qian Liu, and Guanzhou Chen
 
 ## Description
+ 
+The repository includes computer programs for:
 
-These are computer programs for producing selected supplementary results from the article above.  
-The current repository covers the scripts for:
-
-- **Table S5**: evaluating OofA designs under various space-filling criteria
-- **Table S7**: D-efficiencies of OofA designs with different designs and models
+- **Figure 1**: Position combinations in the first two columns of a COA(10,5,1)
+- **Figure 2**: The pairwise plots of the columns of designs X and X' in Example 6
+- **Table S5**: Evaluating OofA designs under various space-filling criteria
+- **Table S7**: D-efficiencies of OofA designs with m components and N runs under various models
+- **Table S8**: MSPEs under different models in the job scheduling problem
+- **Table S9**: MSPEs under different models in the job scheduling problem
+- **Table S10** The means and standard deviations of (M,S)-efficiencies under various models
 
 ## Contents
+
+### Figures 1 and 2
+
+- `Fig1and2.sh` (In `program_2.tar.gz`)  
+  Creates a "Rplots.pdf" file which includes **Figures 1 and 2**.
+
 
 ### Table S5
 
@@ -34,37 +44,30 @@ The current repository covers the scripts for:
 - `Table_S7_SCP_SOofA.R`  
   Computes the mean and standard deviation of the D-efficiencies for the **SOofA** design under the **SCP** model in **Table S7**.
 
+### Table S8
+
+- `TabS8.sh` (In `program_2.tar.gz`)  
+  Generates the data in **Table S8**, with u = 1, 2, 4, 8, 16.
+
+### Table S9
+
+- `TabS9.sh` (In `program_2.tar.gz`)  
+  Generates the data in **Table S9**, with N_train = 504, 72, 36, 24, 18, 9.
+
+### Table S10
+
+- `TabS10.sh` (In `program_2.tar.gz`)  
+  Produces the numerical results of **Table S10**.
+  
+
 ## Requirements
 
-- **R**
-- The scripts may require additional R packages available in the local R environment.
+- The R code may require additional R packages available in the local R environment.
+- The C++ code depends on the Eigen library
+	(https://eigen.tuxfamily.org/index.php?title=Main_Page),
+	with version = 3.3.9 (higher version may or may not work!).
+	For convenience, a copy of Eigen-3.3.9 is provided in `program_2.tar.gz`.
 
-## How to run
-
-Run the corresponding script in R or RStudio. For example:
-
-```r
-source("Table_S5_SOofA.R")
-```
-
-or
-
-```r
-source("Table_S7_SX.R")
-```
-
-## Notes
-
-- The **code content has not been modified**; only the filenames were standardized so that they match the actual supplementary table numbers.
-- This repository is intended to organize and archive the scripts corresponding to the published supplementary results.
-- Please check your local R setup before execution.
-
-## Output
-
-These scripts are intended to reproduce the numerical results reported in:
-
-- **Table S5**
-- **Table S7**
 
 ## License
 
