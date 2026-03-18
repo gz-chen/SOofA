@@ -1,6 +1,6 @@
 # Stratum Order-of-Addition Designs
 
-This repository contains the necessary documentation required to replicate all results in:
+This repository contains all necessary documentation required to replicate the results in:
 
 **Stratum order-of-addition designs**  
 by Liushan Zhou, Ze Liu, Min-Qian Liu, and Guanzhou Chen
