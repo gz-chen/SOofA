@@ -17,7 +17,7 @@ The repository includes computer programs for:
 - **Table S9**: MSPEs under different models in the job scheduling problem
 - **Table S10** The means and standard deviations of (M,S)-efficiencies under various models
 
-## Contents
+## Details
 
 ### Figures 1 and 2
 
