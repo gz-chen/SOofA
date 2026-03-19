@@ -21,7 +21,7 @@ The repository includes computer programs for:
 
 ### Figures 1 and 2
 
-- `Fig1and2.sh` (In `program_2.tar.gz`)  
+- `Fig1and2.sh` 
   Creates a "Rplots.pdf" file which includes **Figures 1 and 2**.
 
 
@@ -46,17 +46,17 @@ The repository includes computer programs for:
 
 ### Table S8
 
-- `TabS8.sh` (In `program_2.tar.gz`)  
+- `TabS8.sh` 
   Generates the data in **Table S8**, with u = 1, 2, 4, 8, 16.
 
 ### Table S9
 
-- `TabS9.sh` (In `program_2.tar.gz`)  
+- `TabS9.sh` 
   Generates the data in **Table S9**, with N_train = 504, 72, 36, 24, 18, 9.
 
 ### Table S10
 
-- `TabS10.sh` (In `program_2.tar.gz`)  
+- `TabS10.sh` 
   Produces the numerical results of **Table S10**.
   
 
