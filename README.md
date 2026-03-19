@@ -62,7 +62,7 @@ The repository includes computer programs for:
 
 ## Requirements
 
-- The R code may require additional R packages available in the local R environment.
+- The R version 4.3.3 was used for all R scripts.
 - The C++ code depends on the Eigen library
 	(https://eigen.tuxfamily.org/index.php?title=Main_Page),
 	with version = 3.3.9 (higher version may or may not work!).
