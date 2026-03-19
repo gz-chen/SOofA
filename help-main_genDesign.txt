@@ -1,0 +1,64 @@
+NAME
+	main_genDesign.bin - generate some stratum OofA designs
+	
+SYNOPSIS
+	./main_genDesign.bin COMPONENT STRENGTH REDUCTION SYMBPERM SAVE
+	COAgenerator
+	
+DESCRIPTION
+	This programme can produce some of the known stratum OofA designs
+	proposed in the ARTICLE "Stratum order-of-addition designs"
+	by Liushan Zhou, Ze Liu, Min-Qian Liu and Guanzhou Chen.
+	
+ARGUMENTS
+	COMPONENT
+		The number of components of the design.
+		It should be a positive integer.
+		
+	STRENGTH
+		The desired strength of stratum orthogonality.
+		
+	REDUCTION
+		The ratio between the numbers of runs
+		of the generated design and a component orthogonal array of the same strength.
+		
+	SYMBPERM
+		This argument should be 1.
+		
+	SAVE
+		If SAVE is 1, then the generated design will be printed to a .txt file in "./des/";
+		otherwise, the design will not be saved in a file.
+		
+EXAMPLE
+	To produce the design X in Example 1 of ARTICLE
+	and save it to "./des/OofAdes_10_5_2_2_1.txt":
+		./main_genDesign.bin 5 2 2 1 1
+		
+	To produce the design X-hat in Example 5 of ARTICLE
+	and save it to "./des/OofAdes_60_6_3_2_1.txt":
+		./main_genDesign.bin 6 3 2 1 1
+		
+	To produce the design X in Example 6 of ARTICLE
+	and save it to "./des/OofAdes_28_8_2_2_1.txt":
+		./main_genDesign.bin 8 2 2 1 1
+		
+	To produce the design X in Example S6 of ARTICLE and do not save it to a file:
+		./main_genDesign.bin 8 2 4 1 0
+		
+	To produce the design X-hat with 840 runs in Example S12 of ARTICLE
+	and do not save it to a file:
+		./main_genDesign.bin 7 4 2 1 0
+		
+	To produce the design X-hat with 60 runs in Example S13 of ARTICLE
+	and do not save it to a file:
+		./main_genDesign.bin 10 2 3 1 0
+		
+AUTHOR
+	Ze Liu (stat.liuze@mail.nankai.edu.cn).
+	
+LICENSE
+	MPL2
+	See "COPYING.MPL2" and these links:
+		http://www.mozilla.org/MPL/2.0/
+		http://www.mozilla.org/MPL/2.0/FAQ.html
+		

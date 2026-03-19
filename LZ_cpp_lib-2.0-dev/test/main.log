@@ -1,0 +1,351 @@
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp: In instantiation of ‘static Liuze::Type_ArrayTemp<Liuze::math::Polynomial<Liuze::math::IntegerResidueClass::Element<IntType, RingType> > > Liuze::math::GaloisField::Field_Base<IntType, CoefRingType, <template-parameter-1-3> >::Get_irrPoly_all(const type_val&, const type_val&) [with IntType = int; CoefRingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = void; Liuze::Type_ArrayTemp<Liuze::math::Polynomial<Liuze::math::IntegerResidueClass::Element<IntType, RingType> > > = std::vector<Liuze::math::Polynomial<Liuze::math::IntegerResidueClass::Element<int> >, std::allocator<Liuze::math::Polynomial<Liuze::math::IntegerResidueClass::Element<int> > > >; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::IntegerResidueClass::tag_type_space<RingType>::type>::type = Liuze::math::IntegerResidueClass::tag_type_space_default; Liuze::math::GaloisField::Field_Base<IntType, CoefRingType, <template-parameter-1-3> >::type_val = int]’:
+math/test_GaloisField.hpp:22:54:   required from here
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:329:16: error: no matching function for call to ‘Liuze::math::IntegerResidueClass::Element<int>::Element(Liuze::math::GaloisField::Field_Base<int, Liuze::math::IntegerResidueClass::Ring_Base<int, void>, void>::type_val, Liuze::math::IntegerResidueClass::Element<int>::type_space (&)(Liuze::math::IntegerResidueClass::Ring_Base<int, void>::type_space_act))’
+    arr_coef[1]=type_int_coef(type_val(1),ring_coef);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:338,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:295:2: note: candidate: ‘Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::type_this&&) [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = Liuze::math::IntegerResidueClass::tag_type_space_default; Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::type_this = Liuze::math::IntegerResidueClass::Element<int>; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::IntegerResidueClass::tag_type_space<RingType>::type>::type = Liuze::math::IntegerResidueClass::tag_type_space_default]’
+  Element<IntType,RingType,TraitsCheck>::Element
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:295:2: note:   candidate expects 1 argument, 2 provided
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:289:2: note: candidate: ‘Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const type_this&) [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = Liuze::math::IntegerResidueClass::tag_type_space_default; Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::type_this = Liuze::math::IntegerResidueClass::Element<int>; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::IntegerResidueClass::tag_type_space<RingType>::type>::type = Liuze::math::IntegerResidueClass::tag_type_space_default]’
+  Element<IntType,RingType,TraitsCheck>::Element
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:289:2: note:   candidate expects 1 argument, 2 provided
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:176:3: note: candidate: ‘template<class AuxIntType, class> Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const AuxIntType&, const type_this&)’
+   Element(AuxIntType const & num_value,type_this const & element);
+   ^~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:176:3: note:   template argument deduction/substitution failed:
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:329:16: note:   cannot convert ‘Liuze::math::GaloisField::ring_coef’ (type ‘Liuze::math::IntegerResidueClass::Element<int>::type_space(Liuze::math::IntegerResidueClass::Ring_Base<int, void>::type_space_act)’ {aka ‘Liuze::math::IntegerResidueClass::Ring_Base<int, void>(Liuze::math::IntegerResidueClass::Ring_Base<int, void>)’}) to type ‘const type_this&’ {aka ‘const Liuze::math::IntegerResidueClass::Element<int>&’}
+    arr_coef[1]=type_int_coef(type_val(1),ring_coef);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:173:3: note: candidate: ‘template<class AuxIntType, class> Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const AuxIntType&, const type_space&)’
+   Element(AuxIntType const & num_value,type_space const & ring);
+   ^~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:173:3: note:   template argument deduction/substitution failed:
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:329:16: note:   cannot convert ‘Liuze::math::GaloisField::ring_coef’ (type ‘Liuze::math::IntegerResidueClass::Element<int>::type_space(Liuze::math::IntegerResidueClass::Ring_Base<int, void>::type_space_act)’ {aka ‘Liuze::math::IntegerResidueClass::Ring_Base<int, void>(Liuze::math::IntegerResidueClass::Ring_Base<int, void>)’}) to type ‘const type_space&’ {aka ‘const Liuze::math::IntegerResidueClass::Ring_Base<int, void>&’}
+    arr_coef[1]=type_int_coef(type_val(1),ring_coef);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:170:12: note: candidate: ‘template<class AuxIntType, class> Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const AuxIntType&)’
+   explicit Element(AuxIntType const & num_value);
+            ^~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:170:12: note:   template argument deduction/substitution failed:
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:329:16: note:   candidate expects 1 argument, 2 provided
+    arr_coef[1]=type_int_coef(type_val(1),ring_coef);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:338,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:258:2: note: candidate: ‘Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element() [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = Liuze::math::IntegerResidueClass::tag_type_space_default]’
+  Element<IntType,RingType,TraitsCheck>::Element
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:258:2: note:   candidate expects 0 arguments, 2 provided
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:331:17: error: no matching function for call to ‘Liuze::math::IntegerResidueClass::Element<int>::Element(Liuze::math::GaloisField::Field_Base<int, Liuze::math::IntegerResidueClass::Ring_Base<int, void>, void>::type_val, Liuze::math::IntegerResidueClass::Element<int>::type_space (&)(Liuze::math::IntegerResidueClass::Ring_Base<int, void>::type_space_act))’
+     arr_coef[0]=type_int_coef(type_val(i_poly),ring_coef);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:338,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:295:2: note: candidate: ‘Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::type_this&&) [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = Liuze::math::IntegerResidueClass::tag_type_space_default; Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::type_this = Liuze::math::IntegerResidueClass::Element<int>; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::IntegerResidueClass::tag_type_space<RingType>::type>::type = Liuze::math::IntegerResidueClass::tag_type_space_default]’
+  Element<IntType,RingType,TraitsCheck>::Element
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:295:2: note:   candidate expects 1 argument, 2 provided
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:289:2: note: candidate: ‘Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const type_this&) [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = Liuze::math::IntegerResidueClass::tag_type_space_default; Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::type_this = Liuze::math::IntegerResidueClass::Element<int>; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::IntegerResidueClass::tag_type_space<RingType>::type>::type = Liuze::math::IntegerResidueClass::tag_type_space_default]’
+  Element<IntType,RingType,TraitsCheck>::Element
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:289:2: note:   candidate expects 1 argument, 2 provided
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:176:3: note: candidate: ‘template<class AuxIntType, class> Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const AuxIntType&, const type_this&)’
+   Element(AuxIntType const & num_value,type_this const & element);
+   ^~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:176:3: note:   template argument deduction/substitution failed:
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:331:17: note:   cannot convert ‘Liuze::math::GaloisField::ring_coef’ (type ‘Liuze::math::IntegerResidueClass::Element<int>::type_space(Liuze::math::IntegerResidueClass::Ring_Base<int, void>::type_space_act)’ {aka ‘Liuze::math::IntegerResidueClass::Ring_Base<int, void>(Liuze::math::IntegerResidueClass::Ring_Base<int, void>)’}) to type ‘const type_this&’ {aka ‘const Liuze::math::IntegerResidueClass::Element<int>&’}
+     arr_coef[0]=type_int_coef(type_val(i_poly),ring_coef);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:173:3: note: candidate: ‘template<class AuxIntType, class> Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const AuxIntType&, const type_space&)’
+   Element(AuxIntType const & num_value,type_space const & ring);
+   ^~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:173:3: note:   template argument deduction/substitution failed:
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:331:17: note:   cannot convert ‘Liuze::math::GaloisField::ring_coef’ (type ‘Liuze::math::IntegerResidueClass::Element<int>::type_space(Liuze::math::IntegerResidueClass::Ring_Base<int, void>::type_space_act)’ {aka ‘Liuze::math::IntegerResidueClass::Ring_Base<int, void>(Liuze::math::IntegerResidueClass::Ring_Base<int, void>)’}) to type ‘const type_space&’ {aka ‘const Liuze::math::IntegerResidueClass::Ring_Base<int, void>&’}
+     arr_coef[0]=type_int_coef(type_val(i_poly),ring_coef);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:170:12: note: candidate: ‘template<class AuxIntType, class> Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const AuxIntType&)’
+   explicit Element(AuxIntType const & num_value);
+            ^~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:170:12: note:   template argument deduction/substitution failed:
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:331:17: note:   candidate expects 1 argument, 2 provided
+     arr_coef[0]=type_int_coef(type_val(i_poly),ring_coef);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:338,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:258:2: note: candidate: ‘Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element() [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = Liuze::math::IntegerResidueClass::tag_type_space_default]’
+  Element<IntType,RingType,TraitsCheck>::Element
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:258:2: note:   candidate expects 0 arguments, 2 provided
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:352:20: error: no matching function for call to ‘Liuze::math::IntegerResidueClass::Element<int>::Element(Liuze::math::GaloisField::Field_Base<int, Liuze::math::IntegerResidueClass::Ring_Base<int, void>, void>::type_val, Liuze::math::IntegerResidueClass::Element<int>::type_space (&)(Liuze::math::IntegerResidueClass::Ring_Base<int, void>::type_space_act))’
+    arr_coef[i_deg]=type_int_coef(type_val(1),ring_coef); //monic;
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:338,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:295:2: note: candidate: ‘Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::type_this&&) [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = Liuze::math::IntegerResidueClass::tag_type_space_default; Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::type_this = Liuze::math::IntegerResidueClass::Element<int>; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::IntegerResidueClass::tag_type_space<RingType>::type>::type = Liuze::math::IntegerResidueClass::tag_type_space_default]’
+  Element<IntType,RingType,TraitsCheck>::Element
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:295:2: note:   candidate expects 1 argument, 2 provided
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:289:2: note: candidate: ‘Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const type_this&) [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = Liuze::math::IntegerResidueClass::tag_type_space_default; Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::type_this = Liuze::math::IntegerResidueClass::Element<int>; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::IntegerResidueClass::tag_type_space<RingType>::type>::type = Liuze::math::IntegerResidueClass::tag_type_space_default]’
+  Element<IntType,RingType,TraitsCheck>::Element
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:289:2: note:   candidate expects 1 argument, 2 provided
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:176:3: note: candidate: ‘template<class AuxIntType, class> Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const AuxIntType&, const type_this&)’
+   Element(AuxIntType const & num_value,type_this const & element);
+   ^~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:176:3: note:   template argument deduction/substitution failed:
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:352:20: note:   cannot convert ‘Liuze::math::GaloisField::ring_coef’ (type ‘Liuze::math::IntegerResidueClass::Element<int>::type_space(Liuze::math::IntegerResidueClass::Ring_Base<int, void>::type_space_act)’ {aka ‘Liuze::math::IntegerResidueClass::Ring_Base<int, void>(Liuze::math::IntegerResidueClass::Ring_Base<int, void>)’}) to type ‘const type_this&’ {aka ‘const Liuze::math::IntegerResidueClass::Element<int>&’}
+    arr_coef[i_deg]=type_int_coef(type_val(1),ring_coef); //monic;
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:173:3: note: candidate: ‘template<class AuxIntType, class> Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const AuxIntType&, const type_space&)’
+   Element(AuxIntType const & num_value,type_space const & ring);
+   ^~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:173:3: note:   template argument deduction/substitution failed:
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:352:20: note:   cannot convert ‘Liuze::math::GaloisField::ring_coef’ (type ‘Liuze::math::IntegerResidueClass::Element<int>::type_space(Liuze::math::IntegerResidueClass::Ring_Base<int, void>::type_space_act)’ {aka ‘Liuze::math::IntegerResidueClass::Ring_Base<int, void>(Liuze::math::IntegerResidueClass::Ring_Base<int, void>)’}) to type ‘const type_space&’ {aka ‘const Liuze::math::IntegerResidueClass::Ring_Base<int, void>&’}
+    arr_coef[i_deg]=type_int_coef(type_val(1),ring_coef); //monic;
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:170:12: note: candidate: ‘template<class AuxIntType, class> Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const AuxIntType&)’
+   explicit Element(AuxIntType const & num_value);
+            ^~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:170:12: note:   template argument deduction/substitution failed:
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:352:20: note:   candidate expects 1 argument, 2 provided
+    arr_coef[i_deg]=type_int_coef(type_val(1),ring_coef); //monic;
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:338,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:258:2: note: candidate: ‘Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element() [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = Liuze::math::IntegerResidueClass::tag_type_space_default]’
+  Element<IntType,RingType,TraitsCheck>::Element
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:258:2: note:   candidate expects 0 arguments, 2 provided
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:359:29: error: no matching function for call to ‘Liuze::math::IntegerResidueClass::Element<int>::Element(const value_type&, Liuze::math::IntegerResidueClass::Element<int>::type_space (&)(Liuze::math::IntegerResidueClass::Ring_Base<int, void>::type_space_act))’
+      arr_coef[i_deg-i_coef]=type_int_coef((*iter_pow)[i_coef-type_val(1)],ring_coef);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:338,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:295:2: note: candidate: ‘Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::type_this&&) [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = Liuze::math::IntegerResidueClass::tag_type_space_default; Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::type_this = Liuze::math::IntegerResidueClass::Element<int>; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::IntegerResidueClass::tag_type_space<RingType>::type>::type = Liuze::math::IntegerResidueClass::tag_type_space_default]’
+  Element<IntType,RingType,TraitsCheck>::Element
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:295:2: note:   candidate expects 1 argument, 2 provided
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:289:2: note: candidate: ‘Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const type_this&) [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = Liuze::math::IntegerResidueClass::tag_type_space_default; Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::type_this = Liuze::math::IntegerResidueClass::Element<int>; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::IntegerResidueClass::tag_type_space<RingType>::type>::type = Liuze::math::IntegerResidueClass::tag_type_space_default]’
+  Element<IntType,RingType,TraitsCheck>::Element
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:289:2: note:   candidate expects 1 argument, 2 provided
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:176:3: note: candidate: ‘template<class AuxIntType, class> Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const AuxIntType&, const type_this&)’
+   Element(AuxIntType const & num_value,type_this const & element);
+   ^~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:176:3: note:   template argument deduction/substitution failed:
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:359:29: note:   cannot convert ‘Liuze::math::GaloisField::ring_coef’ (type ‘Liuze::math::IntegerResidueClass::Element<int>::type_space(Liuze::math::IntegerResidueClass::Ring_Base<int, void>::type_space_act)’ {aka ‘Liuze::math::IntegerResidueClass::Ring_Base<int, void>(Liuze::math::IntegerResidueClass::Ring_Base<int, void>)’}) to type ‘const type_this&’ {aka ‘const Liuze::math::IntegerResidueClass::Element<int>&’}
+      arr_coef[i_deg-i_coef]=type_int_coef((*iter_pow)[i_coef-type_val(1)],ring_coef);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:173:3: note: candidate: ‘template<class AuxIntType, class> Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const AuxIntType&, const type_space&)’
+   Element(AuxIntType const & num_value,type_space const & ring);
+   ^~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:173:3: note:   template argument deduction/substitution failed:
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:359:29: note:   cannot convert ‘Liuze::math::GaloisField::ring_coef’ (type ‘Liuze::math::IntegerResidueClass::Element<int>::type_space(Liuze::math::IntegerResidueClass::Ring_Base<int, void>::type_space_act)’ {aka ‘Liuze::math::IntegerResidueClass::Ring_Base<int, void>(Liuze::math::IntegerResidueClass::Ring_Base<int, void>)’}) to type ‘const type_space&’ {aka ‘const Liuze::math::IntegerResidueClass::Ring_Base<int, void>&’}
+      arr_coef[i_deg-i_coef]=type_int_coef((*iter_pow)[i_coef-type_val(1)],ring_coef);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:170:12: note: candidate: ‘template<class AuxIntType, class> Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const AuxIntType&)’
+   explicit Element(AuxIntType const & num_value);
+            ^~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:170:12: note:   template argument deduction/substitution failed:
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:359:29: note:   candidate expects 1 argument, 2 provided
+      arr_coef[i_deg-i_coef]=type_int_coef((*iter_pow)[i_coef-type_val(1)],ring_coef);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:338,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:258:2: note: candidate: ‘Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element() [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = Liuze::math::IntegerResidueClass::tag_type_space_default]’
+  Element<IntType,RingType,TraitsCheck>::Element
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:258:2: note:   candidate expects 0 arguments, 2 provided
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:362:18: error: no matching function for call to ‘Liuze::math::IntegerResidueClass::Element<int>::Element(Liuze::math::GaloisField::Field_Base<int, Liuze::math::IntegerResidueClass::Ring_Base<int, void>, void>::type_val&, Liuze::math::IntegerResidueClass::Element<int>::type_space (&)(Liuze::math::IntegerResidueClass::Ring_Base<int, void>::type_space_act))’
+      arr_coef[0]=type_int_coef(i_coef,ring_coef);
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:338,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:295:2: note: candidate: ‘Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::type_this&&) [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = Liuze::math::IntegerResidueClass::tag_type_space_default; Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::type_this = Liuze::math::IntegerResidueClass::Element<int>; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::IntegerResidueClass::tag_type_space<RingType>::type>::type = Liuze::math::IntegerResidueClass::tag_type_space_default]’
+  Element<IntType,RingType,TraitsCheck>::Element
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:295:2: note:   candidate expects 1 argument, 2 provided
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:289:2: note: candidate: ‘Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const type_this&) [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = Liuze::math::IntegerResidueClass::tag_type_space_default; Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::type_this = Liuze::math::IntegerResidueClass::Element<int>; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::IntegerResidueClass::tag_type_space<RingType>::type>::type = Liuze::math::IntegerResidueClass::tag_type_space_default]’
+  Element<IntType,RingType,TraitsCheck>::Element
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:289:2: note:   candidate expects 1 argument, 2 provided
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:176:3: note: candidate: ‘template<class AuxIntType, class> Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const AuxIntType&, const type_this&)’
+   Element(AuxIntType const & num_value,type_this const & element);
+   ^~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:176:3: note:   template argument deduction/substitution failed:
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:362:18: note:   cannot convert ‘Liuze::math::GaloisField::ring_coef’ (type ‘Liuze::math::IntegerResidueClass::Element<int>::type_space(Liuze::math::IntegerResidueClass::Ring_Base<int, void>::type_space_act)’ {aka ‘Liuze::math::IntegerResidueClass::Ring_Base<int, void>(Liuze::math::IntegerResidueClass::Ring_Base<int, void>)’}) to type ‘const type_this&’ {aka ‘const Liuze::math::IntegerResidueClass::Element<int>&’}
+      arr_coef[0]=type_int_coef(i_coef,ring_coef);
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:173:3: note: candidate: ‘template<class AuxIntType, class> Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const AuxIntType&, const type_space&)’
+   Element(AuxIntType const & num_value,type_space const & ring);
+   ^~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:173:3: note:   template argument deduction/substitution failed:
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:362:18: note:   cannot convert ‘Liuze::math::GaloisField::ring_coef’ (type ‘Liuze::math::IntegerResidueClass::Element<int>::type_space(Liuze::math::IntegerResidueClass::Ring_Base<int, void>::type_space_act)’ {aka ‘Liuze::math::IntegerResidueClass::Ring_Base<int, void>(Liuze::math::IntegerResidueClass::Ring_Base<int, void>)’}) to type ‘const type_space&’ {aka ‘const Liuze::math::IntegerResidueClass::Ring_Base<int, void>&’}
+      arr_coef[0]=type_int_coef(i_coef,ring_coef);
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:170:12: note: candidate: ‘template<class AuxIntType, class> Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element(const AuxIntType&)’
+   explicit Element(AuxIntType const & num_value);
+            ^~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:170:12: note:   template argument deduction/substitution failed:
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:667,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:362:18: note:   candidate expects 1 argument, 2 provided
+      arr_coef[0]=type_int_coef(i_coef,ring_coef);
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/intresidue.hpp:338,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:5,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:258:2: note: candidate: ‘Liuze::math::IntegerResidueClass::Element<IntType, RingType, <template-parameter-1-3> >::Element() [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = Liuze::math::IntegerResidueClass::tag_type_space_default]’
+  Element<IntType,RingType,TraitsCheck>::Element
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:258:2: note:   candidate expects 0 arguments, 2 provided
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp: In instantiation of ‘static Liuze::math::detail::FunTemp_zero<Liuze::math::IntegerResidueClass::Element<IntType, RingType> >::type_val Liuze::math::detail::FunTemp_zero<Liuze::math::IntegerResidueClass::Element<IntType, RingType> >::zero(const type_val&) [with IntType = int; RingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; Liuze::math::detail::FunTemp_zero<Liuze::math::IntegerResidueClass::Element<IntType, RingType> >::type_val = Liuze::math::IntegerResidueClass::Element<int>; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::IntegerResidueClass::tag_type_space<RingType>::type>::type = Liuze::math::IntegerResidueClass::tag_type_space_default]’:
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/function.cpp:214:44:   required from ‘ValType Liuze::math::zero(const ValType&) [with ValType = Liuze::math::IntegerResidueClass::Element<int>]’
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/polynomial.cpp:405:21:   required from ‘Liuze::math::Polynomial<CoefType>::type_coef Liuze::math::Polynomial<CoefType>::coef_zero() const [with CoefType = Liuze::math::IntegerResidueClass::Element<int>; Liuze::math::Polynomial<CoefType>::type_coef = Liuze::math::IntegerResidueClass::Element<int>]’
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/polynomial.cpp:115:34:   required from ‘Liuze::math::Polynomial<CoefType>::type_this& Liuze::math::Polynomial<CoefType>::operator+=(const type_this&) [with CoefType = Liuze::math::IntegerResidueClass::Element<int>; Liuze::math::Polynomial<CoefType>::type_this = Liuze::math::Polynomial<Liuze::math::IntegerResidueClass::Element<int> >]’
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:1097:20:   required from ‘Liuze::math::GaloisField::Element<IntType, FieldType, <template-parameter-1-3> >::type_this& Liuze::math::GaloisField::Element<IntType, FieldType, <template-parameter-1-3> >::operator+=(const type_this&) [with IntType = int; FieldType = Liuze::math::GaloisField::Field_Base<int, Liuze::math::IntegerResidueClass::Ring_Base<int, void>, void>; <template-parameter-1-3> = Liuze::math::GaloisField::tag_type_space_default; Liuze::math::GaloisField::Element<IntType, FieldType, <template-parameter-1-3> >::type_this = Liuze::math::GaloisField::Element<int, Liuze::math::GaloisField::Field_Base<int, Liuze::math::IntegerResidueClass::Ring_Base<int, void>, void>, Liuze::math::GaloisField::tag_type_space_default>; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::GaloisField::tag_type_space<FieldType>::type>::type = Liuze::math::GaloisField::tag_type_space_default]’
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:1567:12:   required from ‘Liuze::math::GaloisField::Element<IntType, FieldType> Liuze::math::GaloisField::operator+(Liuze::math::GaloisField::Element<IntType, FieldType>, const Liuze::math::GaloisField::Element<IntType, FieldType>&) [with IntType = int; FieldType = Liuze::math::GaloisField::Field_Base<int, Liuze::math::IntegerResidueClass::Ring_Base<int, void>, void>; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::GaloisField::tag_type_space<FieldType>::type>::type = Liuze::math::GaloisField::tag_type_space_default]’
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:669:55:   required from ‘void Liuze::math::GaloisField::Field_tabulated<IntType, CoefRingType>::Cal_table() [with IntType = int; CoefRingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>]’
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/GaloisField.cpp:441:9:   required from ‘Liuze::math::GaloisField::Field_tabulated<IntType, CoefRingType>::Field_tabulated(const AuxIntType&, const AuxIntType&, const type_poly&) [with AuxIntType = int; <template-parameter-2-2> = void; IntType = int; CoefRingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; Liuze::math::GaloisField::Field_tabulated<IntType, CoefRingType>::type_poly = Liuze::math::Polynomial<Liuze::math::IntegerResidueClass::Element<int> >]’
+math/test_GaloisField.hpp:30:49:   required from here
+/home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/src/intresidue.cpp:805:22: error: ‘const type_space’ {aka ‘const class Liuze::math::IntegerResidueClass::Ring_Base<int, void>’} has no member named ‘zero’
+     return x.space().zero();
+In file included from /usr/include/c++/8/functional:59,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/basic/src/basic_std.hpp:25,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/basic/basic.hpp:8,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/basic.hpp:4,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/function.hpp:4,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/polynomial.hpp:5,
+                 from /home/liuze/LZ/LZ_Cpp/LZ_H/LZ_cpp_lib-2.0-dev/LZ_H/math/GaloisField.hpp:4,
+                 from math/test_GaloisField.hpp:4,
+                 from main.cpp:23:
+/usr/include/c++/8/bits/std_function.h:666:7: error: ‘std::function<_Res(_ArgTypes ...)>::function(_Functor) [with _Functor = Liuze::math::GaloisField::Field_Base<IntType, CoefRingType, <template-parameter-1-3> >::Get_irrPoly_all(const type_val&, const type_val&) [with IntType = int; CoefRingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = void; Liuze::Type_ArrayTemp<Liuze::math::Polynomial<Liuze::math::IntegerResidueClass::Element<IntType, RingType> > > = std::vector<Liuze::math::Polynomial<Liuze::math::IntegerResidueClass::Element<int> >, std::allocator<Liuze::math::Polynomial<Liuze::math::IntegerResidueClass::Element<int> > > >; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::IntegerResidueClass::tag_type_space<RingType>::type>::type = Liuze::math::IntegerResidueClass::tag_type_space_default; Liuze::math::GaloisField::Field_Base<IntType, CoefRingType, <template-parameter-1-3> >::type_val = int]::<lambda(const type_poly&)>; <template-parameter-2-2> = void; <template-parameter-2-3> = void; _Res = int; _ArgTypes = {const Liuze::math::Polynomial<Liuze::math::IntegerResidueClass::Element<int, Liuze::math::IntegerResidueClass::Ring_Base<int, void>, Liuze::math::IntegerResidueClass::tag_type_space_default> >&}]’, declared using local type ‘Liuze::math::GaloisField::Field_Base<IntType, CoefRingType, <template-parameter-1-3> >::Get_irrPoly_all(const type_val&, const type_val&) [with IntType = int; CoefRingType = Liuze::math::IntegerResidueClass::Ring_Base<int, void>; <template-parameter-1-3> = void; Liuze::Type_ArrayTemp<Liuze::math::Polynomial<Liuze::math::IntegerResidueClass::Element<IntType, RingType> > > = std::vector<Liuze::math::Polynomial<Liuze::math::IntegerResidueClass::Element<int> >, std::allocator<Liuze::math::Polynomial<Liuze::math::IntegerResidueClass::Element<int> > > >; typename std::enable_if<std::is_integral<_Tp>::value, typename Liuze::math::IntegerResidueClass::tag_type_space<RingType>::type>::type = Liuze::math::IntegerResidueClass::tag_type_space_default; Liuze::math::GaloisField::Field_Base<IntType, CoefRingType, <template-parameter-1-3> >::type_val = int]::<lambda(const type_poly&)>’, is used but never defined [-fpermissive]
+       function<_Res(_ArgTypes...)>::
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [makefile:8：main.bin] 错误 1
