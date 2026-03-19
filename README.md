@@ -3,6 +3,7 @@
 This repository contains all necessary documentation required to replicate the results in:
 
 **Stratum order-of-addition designs**  
+
 by Liushan Zhou, Ze Liu, Min-Qian Liu, and Guanzhou Chen
 
 ## Description
