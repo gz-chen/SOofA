@@ -47,17 +47,17 @@ The repository includes computer programs for:
 
 ### Table S8
 
-- `TabS8.sh` 
+- `TabS8.sh`  
   Generates the data in **Table S8**, with u = 1, 2, 4, 8, 16.
 
 ### Table S9
 
-- `TabS9.sh` 
+- `TabS9.sh`  
   Generates the data in **Table S9**, with N_train = 504, 72, 36, 24, 18, 9.
 
 ### Table S10
 
-- `TabS10.sh` 
+- `TabS10.sh`  
   Produces the numerical results of **Table S10**.
   
 
